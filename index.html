@@ -1,0 +1,125 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" type="text/css" href="./css/miconselector.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.js"></script>
+<script type="text/javascript" src="./miconselector.js"></script>
+<script type="text/javascript">
+
+$(document).ready( function(){
+
+    $('select[name="my_icons"]').mIconSelector({
+      	path	: './img/',
+      	width	: 24,
+      	height	: 24,
+      	columns	: 3
+	});
+
+});
+
+</script>
+
+<style type="text/css">
+  body { background-color:#F5F5F5; font-size: 12px; font-family: Tahoma; color: #555; margin: 24px; }
+  .section { background: none repeat scroll 0 0 #FFFFFF; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); margin-bottom: 27px; padding: 20px; line-height: 18px; }
+  ul.section { padding-left: 32px; }
+  .section-title { font-size: 20px;line-height: 22px;margin-bottom: 10px;margin-top: 10px;font-weight: normal;}
+  .in-section-title {font-size: 18px;line-height: 20px;margin-bottom: 8px;font-weight: normal;}
+  pre {background-color: #FAFAFA;border: 1px solid #CCCCCC;color: #000000;font-size: 11px;padding: 4px;}
+  a {color: #006096;text-decoration:none;font-weight: bold; }
+  a:hover { text-decaration: underline; }
+  .definition { display: inline-block; font-family: monospace;font-size: 15px;color: #0070A6;}
+  .typization { margin-left: 30px; font-style: italic; }
+  .description {display:block;margin-bottom: 20px; margin-left: 10px;}
+</style>
+
+
+<head>
+<title>MantellaIconSelector</title>
+</head>
+<body>
+
+<div class="section-title">MantellaIconSelector demo</div>
+<div class="section">
+	  Select icon:<br>
+	  <select name="my_icons">
+	    <option value="1" image="1.png">Cookie</option>
+	    <option value="2" image="2.png">Access</option>
+	    <option value="3" image="3.png">Katomic</option>
+	    <option value="4" image="4.png">ClickAndRun</option>
+	    <option value="5" image="5.png">Sun</option>
+	    <option value="6" image="6.png">Users</option>
+	    <option value="7" image="7.png">Settings</option>
+	    <option value="8" image="8.png">LogOut</option>
+	    <option value="9" image="9.png">ShutDown</option>
+	  </select>
+</div>
+
+<div class="section-title">Features</div>
+<ul class="section">
+    <li>Compact block of content</li>
+    <li>Wrap on standart select</li>
+    <li>Expanded window for selection</li>
+    <li>Multi columns</li>
+    <li>Displaying icon's titles</li>
+</ul>
+
+<div class="section-title">Getting started</div>
+<div class="section">
+	<div class="in-section-title">Insert in head</div>
+	<pre>&lt;!-- basic style --&gt;
+&lt;link rel="stylesheet" type="text/css" href="your_path/css/miconselector.css" /&gt;
+&lt;!-- required javascripts --&gt;
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="your_path/js/miconselector.js"&gt;&lt;/script&gt;</pre>
+	<div class="in-section-title">Insert in body</div>
+	<pre>&lt;select name"my_icons"&gt; window content
+  &lt;option value="1" image="1.png"&gt;title 1&lt;/option&gt;
+  &lt;option value="2" image="2.png"&gt;title 2&lt;/option&gt;
+  &lt;option value="3" image="3.png"&gt;title 3&lt;/option&gt;
+  &lt;option value="4" image="4.png"&gt;title 4&lt;/option&gt;
+  &lt;option value="5" image="5.png"&gt;title 5&lt;/option&gt;
+  &lt;option value="6" image="6.png"&gt;title 6&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;script type="text/javascript"&gt;
+$(document).ready( function(){
+    $('select[name="my_icons"]').mIconSelector({
+      	path	: './img/',
+      	width	: 24,
+      	height	: 24,
+      	columns	: 3
+	});
+});
+&lt;/script&gt;</pre>
+
+</div>
+
+<div class="section-title">Documentation</div>
+<div class="section">
+
+	<div class="in-section-title">Options</div>
+	<span class="definition">path</span><span class="typization">Type: string, Default: "./icons/"</span>
+	<span class="description">Path to map of icon-images.</span>
+	<span class="definition">width</span><span class="typization">Type: string, Default: 32</span>
+	<span class="description">Width of icon-image.</span>
+	<span class="definition">height</span><span class="typization">Type: string, Default: 32</span>
+	<span class="description">Height of icon-image.</span>
+	<span class="definition">columns</span><span class="typization">Type: integer, Default: 3</span>
+	<span class="description">Count of columns in popup selection list.</span>
+
+	<div class="in-section-title">Methods</div>
+	<span class="description">no methods</span>
+
+	<div class="in-section-title">Events</div>
+	<span class="description">no events</span>
+</div>
+
+
+
+</body>
+</html>
+

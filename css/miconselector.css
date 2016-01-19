@@ -1,0 +1,82 @@
+/*
+ * mIconSelector v0.1 Stylesheet
+ * Copyright (c) 2013 Vasilij Olhov
+ * Dual licensed under the MIT and GPL licenses
+ */
+
+.selecticon-container {
+	position: relative;
+	display: inline-block;
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.selecticon-container .selecticon-display {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 9;
+}
+
+.selecticon-container .selecticon-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: url('./arrow.png') no-repeat center center;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    z-index: 10;
+}
+
+
+.selecticon-container .selecticon-choice {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:#FFF;
+	padding: 3px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.selecticon-container .selecticon-choice .selecticon-icon {
+ 	float: left;
+ 	display: block;
+ 	background-color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+    padding: 2px;
+    cursor: pointer;
+    margin: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selecticon-container .selecticon-choice .selecticon-icon:hover {
+    border: 1px solid #aaa;
+}
+
+.selecticon-container .selecticon-choice .selecticon-title {
+	border-top:1px solid #CCC;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #777;
+	text-align: center;
+	padding: 0;
+	height: 16px;
+	white-space: nowrap;
+}
